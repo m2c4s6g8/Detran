@@ -42,7 +42,9 @@ public class InfracaoService {
 			return repositoryInfracao.save(infracaoNovo);
 		}
 		
-		
+		public Infracao formDto(InfracaoDto infracaoDto) {
+			return new Infracao(infracaoDto.getId(),infracaoDto.getDescricao(),infracaoDto.getPontos(),infracaoDto.getValor());
+		}
 	
 		
 }
