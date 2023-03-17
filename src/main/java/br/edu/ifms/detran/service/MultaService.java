@@ -16,7 +16,7 @@ public class MultaService {
 	@Autowired
 	private RepositoryMulta repositoryMulta;
 
-	public List buscarTodos(){
+	public List<Multa> buscarTodos(){
 	return repositoryMulta.findAll();
 	}
 

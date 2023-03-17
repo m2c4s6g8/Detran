@@ -16,7 +16,7 @@ public class CarroService {
 	@Autowired
 	private RepositoryCarro repositoryCarro;
 
-	public List buscarTodos(){
+	public List<Carro> buscarTodos(){
 	return repositoryCarro.findAll();
 	}
 

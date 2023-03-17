@@ -15,7 +15,7 @@ public class InfracaoService {
 	@Autowired
 	private RepositoryInfracao repositoryInfracao;
 	
-	public List buscarTodos(){
+	public List<Infracao> buscarTodos(){
 		return repositoryInfracao.findAll();
 	}
 	

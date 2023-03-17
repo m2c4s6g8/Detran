@@ -16,7 +16,7 @@ public class ApoliceService {
 	@Autowired
 	private RepositoryApolice repositoryApolice;
 
-	public List buscarTodos(){
+	public List<Apolice> buscarTodos(){
 	return repositoryApolice.findAll();
 	}
 
